@@ -3,4 +3,7 @@ function math() {
   if (text.includes('sqrt')) {
     text.replace('sqrt','√');
   }
+  else {
+    document.write('hi');
+  }
 }
