@@ -1,5 +1,5 @@
-function math1() {
-  var text = document.getElementById('math1').value;
+function m2() {
+  var text = document.getElementById('m1').value;
   if (text.includes('sqrt')) {
     text.replace('sqrt','√');
   }
