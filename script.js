@@ -1,4 +1,5 @@
-function m2() {
+function m2(e) {
+  e.preventDefault();
   //document.write('hi');
   var text1 = document.getElementById('m1').value;
   var new1 = text1;
