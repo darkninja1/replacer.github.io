@@ -1,7 +1,7 @@
 function m2() {
   //document.write('hi');
   var text1 = document.getElementById('m1').value;
-  var new1 = text;
+  var new1 = text1;
   if (text1.includes("sqrt")) {
     new1.replace("sqrt","√");
   }
