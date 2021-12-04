@@ -14,7 +14,7 @@ form.addEventListener('submit', function(e) {
 
     var end4 = end3.replaceAll(")","</sup></sub>");
 
-    var end5 = end4.replaceAll("*","&sdot;");
+    var end5 = end4.replaceAll("*","&sdot; ");
     
     document.getElementById('m3').innerHTML = end5;
     
