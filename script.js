@@ -9,11 +9,13 @@ form.addEventListener('submit', function(e) {
     
     var end1 = text1.replace("sqrt","√");
     
-    var end2 = end1.replace("_","<sub>");
+    var end2 = end1.replace("_(","<sub>");
     
-    var end3 = end2.replace("^","<sup>");
+    var end3 = end2.replace("^(","<sup>");
+
+    var end4 = end3.replace(")","</sup></sub>");
     
-    document.getElementById('m3').innerHTML = end3;
+    document.getElementById('m3').innerHTML = end4;
     
 });
 
