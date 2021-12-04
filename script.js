@@ -3,24 +3,25 @@ var form = document.getElementById("m1");
 //
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-    
+    var end = "";
     var text1 = document.getElementById('m2').value;
 
     if (text1.includes("sqrt")) {
-      text1.replace("sqrt","√");
+      end = text1.replace("sqrt","√");
     }
     else if (text1.includes("_")) {
-      text1.replace("_","<sub>");
+      end = text1.replace("_","<sub>");
     }
     else if (text1.includes("^")) {
-      text1.replace("^","<sup>");
+      end = text1.replace("^","<sup>");
     }
     else {
-      document.write("Invalid Url or Error");
+      document.write("Invalid or Error");
     }
-    document.getElementById('m3').innerHTML = text1;
+    document.getElementById('m3').innerHTML = end;
     
 });
+
   
   
 
