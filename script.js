@@ -3,19 +3,19 @@ var form = document.getElementById("m1");
 //
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-    var end = "";
+    
     var text1 = document.getElementById('m2').value;
 
     //if (text1.includes("sqrt")) {
-    end = text1.replace("sqrt","√");
+    var end1 = text1.replace("sqrt","√");
     //}
     //else if (text1.includes("_")) {
-    end = text1.replace("_","<sub>");
+    var end2 = end1.replace("_","<sub>");
     //}
     //else if (text1.includes("^")) {
-    end = text1.replace("^","<sup>");
+    var end3 = end2.replace("^","<sup>");
     //}
-    document.getElementById('m3').innerHTML = end;
+    document.getElementById('m3').innerHTML = end3;
     
 });
 
