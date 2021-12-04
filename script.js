@@ -15,9 +15,6 @@ form.addEventListener('submit', function(e) {
     else if (text1.includes("^")) {
       end = text1.replace("^","<sup>");
     }
-    else {
-      document.write("Invalid or Error");
-    }
     document.getElementById('m3').innerHTML = end;
     
 });
